@@ -41,7 +41,7 @@
 
 #### Emoji数据来源
 
-1. 本项目里使用的emoji数据来源为该网址：[](https://www.fuhaozi.com/emoji/biaoqing.html)
+1. 本项目里使用的emoji数据来源为该网址：[表情emoji大全](https://www.fuhaozi.com/emoji/biaoqing.html)
 
    ![emoji-html](images/emoji-html.png)
 
