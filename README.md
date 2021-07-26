@@ -15,11 +15,11 @@
 
 ​	模拟器效果
 
-​	<img src="images/virtual.png" alt="virtual" style="zoom:129%;" /> 
+​	<img src="images/virtual.png" alt="virtual"  /> 
 
 ​	真机效果
 
-​	<img src="images/native.png" alt="native" style="zoom: 33%;" />
+​	<img src="images/native.png" alt="native" />
 
 #### 使用说明
 
