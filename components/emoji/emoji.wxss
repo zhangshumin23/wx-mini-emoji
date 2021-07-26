@@ -1,0 +1,31 @@
+.emoji_panel{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 1000;
+  flex-direction: column;
+}
+.emoji_close{
+  margin-left: auto;
+}
+.close_btn{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 20rpx 30rpx 0 0;
+}
+.emoji_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 15rpx;
+  overflow-y: scroll;
+  margin-bottom: 80rpx;
+}
+.emoji_icon{
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 50rpx;
+  padding: 15rpx;
+}

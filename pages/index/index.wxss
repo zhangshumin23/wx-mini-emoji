@@ -1,0 +1,6 @@
+/**index.wxss**/
+.emoji_icon{
+  text-align: center;
+  font-size: 100rpx;
+  margin: 0 auto;
+}

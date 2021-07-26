@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view>
+  <button bindtap="openEmoji">打开emoji</button>
+  <view wx:if="{{emoji}}" class="emoji_icon">
+    {{emoji}}
+  </view>
+  <emoji is-show="{{showEmoji}}" height="600rpx" background-color="#f7f7f7"
+   bindclose="closeEmoji" bindchoose="chooseEmoji" />
+</view>
+

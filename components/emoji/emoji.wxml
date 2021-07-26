@@ -1,0 +1,9 @@
+<view wx:if="{{isShow}}" style="height:{{height}};background-color:{{backgroundColor}}" class="emoji_panel">
+  <view class="emoji_close"><image class="close_btn" src="{{closeImg}}" bindtap="closeEmoji" /></view>
+  <view class="emoji_list">
+    <view class="emoji_icon" bindtap="chooseEmoji" data-emoji="{{item}}" wx:for="{{emojiList}}" wx:for-index="idx"
+      wx:for-item="item" wx:key="unique">
+      {{item}}
+    </view>
+  </view>
+</view>
