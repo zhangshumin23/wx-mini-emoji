@@ -66,7 +66,7 @@
 1. 目前只实现了最简单的版本，还有很多可以完善的地方，在这里我只使用了表情类的emoji，还可以在面板加入多个tab，把其他类的emoji也加进来。
 
 2. 样式方面可以再美化一下
-3.github貌似会出现Readme图片不显示问题，可以访问我gitee [wx-mini-emoji](https://gitee.com/youtree/wx-mini-emoji.git)同步代码
+3. github貌似会出现Readme图片不显示问题，可以访问我gitee [wx-mini-emoji](https://gitee.com/youtree/wx-mini-emoji.git)同步代码
 
    
 
