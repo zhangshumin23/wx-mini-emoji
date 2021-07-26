@@ -1,39 +1,62 @@
 # wx-mini-emoji
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+​	介于在网上找了好久的小程序emoji组件都没有合适的，于是乎自己手写了一个，做了一个简陋的版本，但也满足自己目前需求了。
 
 #### 软件架构
-软件架构说明
+​	小程序原生开发
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+​	直接使用微信开发工具导入项目即可
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 页面json配置导入emoji组件
 
-#### 参与贡献
+   ![](https://gitee.com/youtree/wx-mini-emoji/blob/master/images/import-emoji.png)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+2. 页面使用组件
+
+   ![](https://gitee.com/youtree/wx-mini-emoji/blob/master/images/use-emoji.png)
+
+   - is-show为必传参数，控制emoji面板的显隐
+   - height和background-color为面板的高度和背景颜色，不传时默认为600rpx和#f7f7f7
+   - bindclose和bindchoose为关闭和选择emoji事件，绑定到自己写的事件上
+
+3. emoji图标数组在/components/emoji/emoji.js的emojiList，可自己替换成别的
+
+   ![](https://gitee.com/youtree/wx-mini-emoji/blob/master/images/replace-emoji.png)
+
+#### Emoji数据来源
+
+1. 本项目里使用的emoji数据来源为该网址：[](https://www.fuhaozi.com/emoji/biaoqing.html)
+
+   ![](https://gitee.com/youtree/wx-mini-emoji/blob/master/images/emoji-html.png)
+
+2. 获取emoji方式：打开浏览器的开发者工具（F12），切换tab到Console执行以下脚本
+
+   ![](https://gitee.com/youtree/wx-mini-emoji/blob/master/images/emoji-script.png)
+
+   ```javascript
+   var emojiTag = $(".list_moji").find("li").find("p");
+   var emojiArr = [];
+   for(var i = 0; i < emojiTag.length;i++){ 
+       emojiArr.push($(emojiTag[i]).text())
+   }
+   console.log(emojiArr)
+   ```
+
+   直接复制数据内容替换掉emojiList即可。
 
 
-#### 特技
+#### 备注
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. 目前只实现了最简单的版本，还有很多可以完善的地方，在这里我只使用了表情类的emoji，还可以在面板加入多个tab，把其他类的emoji也加进来。
+
+2. 样式方面可以再美化一下
+
+   
+
+   
